@@ -6,5 +6,11 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello World!'
 
+@app.route('/newpage/')
+@app.route('/new/')
+@app.route('/новаястраница/')
+def new():
+    return 'New page'
+
 if __name__ == '__main__':
     app.run()
