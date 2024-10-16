@@ -1,0 +1,40 @@
+.cards {
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+   gap: 20px; /* Отступы между карточками */
+}
+
+.card {
+   width: 400px; /* Увеличиваем ширину карточки */
+   background-color: burlywood;
+   border-radius: 20px;
+   transition: background-color 0.5s;
+   overflow: hidden;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.photo {
+   height: 550px; /* Фиксированная высота для всех изображений */
+}
+
+.photo img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover; /* Масштабируем, чтобы изображение занимало всю высоту блока, обрезая при необходимости, сохраняя пропорции */
+   border-radius: 20px 20px 0 0; /* Скругляем только верхние углы */
+}
+
+.info {
+   padding: 20px;
+   height: auto;
+   flex-grow: 1;
+}
+
+.card:hover {
+   background-color: yellow;
+   transition: background-color 0.5s;
+}
