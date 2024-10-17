@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{caption}}</title>
+</head>
+<body>
+<!--{% if user%}-->
+<!--  <p>You are login as {{user}}</p>-->
+<!--{% endif %}-->
+
+<!--        <p>-->
+<!--            {% for user in list %}-->
+<!--                {{user}}-->
+<!--            {% endfor %}-->
+<!--        </p>-->
+
+<h1>Стихотворение Пушкина</h1>
+    <p>
+        {% for i in poem %}
+            {{i}}<br>
+        {% endfor %}
+    </p>
+
+
+</body>
+</html>
